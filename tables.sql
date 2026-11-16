@@ -18,17 +18,11 @@ CREATE TABLE MasterDiagnosis
 CREATE TABLE MasterIcdCode
 (
     Id                  INT             NOT NULL PRIMARY KEY,
-    MasterDiagnosisId   INT             NOT NULL,
     IcdCode             VARCHAR(20)     NOT NULL,
     Description         VARCHAR(500)    NULL,
     IsActive            BIT             NOT NULL,
 
-    CONSTRAINT FK_MasterIcdCode_MasterDiagnosis
-        FOREIGN KEY (MasterDiagnosisId)
-        REFERENCES MasterDiagnosis(Id),
-
-    CONSTRAINT UQ_MasterIcdCode
-        UNIQUE (MasterDiagnosisId, IcdCode)
+   
 );
 
 CREATE TABLE VisitDiagnosis
