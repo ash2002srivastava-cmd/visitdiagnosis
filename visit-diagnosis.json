@@ -1,0 +1,12 @@
+{
+  "diagnoses": [
+    {
+      "diagnosisId": 101,
+      "icdCodes": ["E11.9", "E11.65"]
+    },
+    {
+      "diagnosisId": 205,
+      "icdCodes": ["I10"]
+    }
+  ]
+}
